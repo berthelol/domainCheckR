@@ -1,15 +1,22 @@
 {
   "name": "namecheckr",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Check name availibity",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "local": "pm2 start ecosystem.local.json && pm2 log",
+    "dev": "pm2 start ecosystem.dev.json && pm2 log",
+    "prod": "pm2 start ecosystem.prod.json && pm2 log"
   },
   "author": "Loïc Berthelot",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "chalk": "^2.4.1",
+    "dotenv": "^6.1.0",
+    "form-data": "^2.3.3",
+    "lodash": "^4.17.11",
+    "node-mailjet": "^3.3.1",
     "node-schedule": "^1.3.1"
   }
 }

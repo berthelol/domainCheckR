@@ -1,0 +1,6 @@
+/node_modules
+
+// ecosystem
+ecosystem.local.json
+ecosystem.dev.json
+ecosystem.prod.json

@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "Name CheckR",
+      "script": "./index.js",
+      "watch": true,
+      "ignore_watch": ["node_modules", "logs", ".git"],
+      "merge_logs": true,
+      "cwd": ".",
+      "env": {
+        "domainCheck": "",
+        "extWanted": [],
+        "MJ_APIKEY_PUBLIC": "",
+        "MJ_APIKEY_PRIVATE": "",
+        "CRON": "0 9 * * *"
+      }
+    }
+  ]
+}
