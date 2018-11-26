@@ -1,20 +1,19 @@
 ### Create env file with the domains you want to check
 Create env file:
 ``
-touch .env
+cp ecosystem.default.json ecosystem.local.json
 ``
-Then insert the domain names (always array)
+Then edit the env file
 ``
-sudo nano .env
+sudo nano ecosystem.local.json
 ``
-ei: ["loic.com", "toto.com"]
 
 Then :
 ``
 npm i
 ``
 ``
-npm start
+npm run local
 ``
 
 
